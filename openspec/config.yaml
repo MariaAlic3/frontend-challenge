@@ -1,0 +1,56 @@
+schema: spec-driven
+
+context: |
+  # Glossário — Marketplace de NFTs
+
+  ## Contexto: Catálogo
+  Pasta: `src/modules/catalog/`
+
+  | Termo | Onde aparece (README) | Significado neste contexto |
+  |---|---|---|
+  | NFT | Topo, §3 tab., §3 Catálogo, §3 Carrinho, §5, §7, §10 | O item colecionável exibido, buscado, filtrado e detalhado no catálogo. |
+  | Detalhe | §3 tab., §3 Catálogo, §5, §7, §8, §9, §10 | A página com galeria, informações e opções de compra de um NFT específico. |
+  | Edição | §3 tab., §3 Catálogo, §3 Carrinho, §6 | A tiragem/versão específica do NFT (ex.: edição limitada). |
+
+  ## Contexto: Carrinho
+  Pasta: `src/modules/cart/`
+
+  | Termo | Onde aparece (README) | Significado neste contexto |
+  |---|---|---|
+  | Item | §3 tab., §3 Carrinho, §3 Pagamento, §5 | Um NFT (com sua edição e quantidade) adicionado ao carrinho. |
+  | Cupom | §3 tab., §3 Carrinho, §3 Pagamento, §5, §6, §9 | Código aplicado ao carrinho que gera desconto, podendo ser inválido ou expirado. |
+  | Subtotal | §3 Carrinho | Soma dos itens do carrinho antes de descontos e taxas. |
+
+  ## Palavra que muda de sentido: Quantidade
+  (aparece em §3 tab., §3 Catálogo, §3 Carrinho, §3 Pagamento, §9)
+
+  | Contexto | Sentido |
+  |---|---|
+  | Catálogo | Quanto daquela edição do NFT ainda está disponível (atributo do produto). |
+  | Carrinho | Quanto o colecionador decidiu comprar (valor editável pelo usuário, que afeta o subtotal). |
+
+  Language: pt-BR
+  All artifacts must be written in pt-BR.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always state what is out of scope
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
